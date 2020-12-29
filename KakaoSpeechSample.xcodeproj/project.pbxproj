@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E900C91E259B4D8000E118A6 /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E900C91D259B4D8000E118A6 /* KakaoCommon.framework */; };
+		E900C92F259B50F900E118A6 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E900C92D259B50E300E118A6 /* libiconv.2.4.0.tbd */; };
+		E900C936259B5A9A00E118A6 /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900C935259B5A9A00E118A6 /* Selector.swift */; };
+		E900C93A259B5AB800E118A6 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900C939259B5AB800E118A6 /* UI.swift */; };
+		E900C93D259B5AF500E118A6 /* Speak.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900C93C259B5AF500E118A6 /* Speak.swift */; };
+		E918449F259B4650008B6A6B /* KakaoNewtoneSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9184496259B44B4008B6A6B /* KakaoNewtoneSpeech.framework */; };
 		E9337F73259B410700DA442F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9337F72259B410700DA442F /* AppDelegate.swift */; };
 		E9337F75259B410700DA442F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9337F74259B410700DA442F /* SceneDelegate.swift */; };
 		E9337F77259B410700DA442F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9337F76259B410700DA442F /* ViewController.swift */; };
@@ -16,6 +22,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D2A132AC580371AA72C2120 /* Pods-KakaoSpeechSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoSpeechSample.debug.xcconfig"; path = "Target Support Files/Pods-KakaoSpeechSample/Pods-KakaoSpeechSample.debug.xcconfig"; sourceTree = "<group>"; };
+		BCF0CC629BED3B54BF156F9C /* Pods-KakaoSpeechSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoSpeechSample.release.xcconfig"; path = "Target Support Files/Pods-KakaoSpeechSample/Pods-KakaoSpeechSample.release.xcconfig"; sourceTree = "<group>"; };
+		E900C91D259B4D8000E118A6 /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
+		E900C92B259B50D300E118A6 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		E900C92D259B50E300E118A6 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		E900C935259B5A9A00E118A6 /* Selector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selector.swift; sourceTree = "<group>"; };
+		E900C939259B5AB800E118A6 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		E900C93C259B5AF500E118A6 /* Speak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speak.swift; sourceTree = "<group>"; };
+		E9184494259B4482008B6A6B /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoCommon.framework; path = "kakao-ios-sdk-speech-8.0.0/internal/KakaoCommon.framework"; sourceTree = "<group>"; };
+		E9184496259B44B4008B6A6B /* KakaoNewtoneSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoNewtoneSpeech.framework; sourceTree = "<group>"; };
 		E9337F6F259B410700DA442F /* KakaoSpeechSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoSpeechSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9337F72259B410700DA442F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9337F74259B410700DA442F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +47,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E918449F259B4650008B6A6B /* KakaoNewtoneSpeech.framework in Frameworks */,
+				E900C91E259B4D8000E118A6 /* KakaoCommon.framework in Frameworks */,
+				E900C92F259B50F900E118A6 /* libiconv.2.4.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37C3D682847FC48E829A9952 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D2A132AC580371AA72C2120 /* Pods-KakaoSpeechSample.debug.xcconfig */,
+				BCF0CC629BED3B54BF156F9C /* Pods-KakaoSpeechSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E900C92A259B50D300E118A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E900C92D259B50E300E118A6 /* libiconv.2.4.0.tbd */,
+				E900C92B259B50D300E118A6 /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E900C931259B5A7000E118A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E900C932259B5A7900E118A6 /* Main */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E900C932259B5A7900E118A6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E900C934259B5A8D00E118A6 /* Selector */,
+				E900C933259B5A8800E118A6 /* Helper */,
+				E9337F76259B410700DA442F /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E900C933259B5A8800E118A6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E900C939259B5AB800E118A6 /* UI.swift */,
+				E900C93C259B5AF500E118A6 /* Speak.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E900C934259B5A8D00E118A6 /* Selector */ = {
+			isa = PBXGroup;
+			children = (
+				E900C935259B5A9A00E118A6 /* Selector.swift */,
+			);
+			path = Selector;
+			sourceTree = "<group>";
+		};
 		E9337F66259B410700DA442F = {
 			isa = PBXGroup;
 			children = (
 				E9337F71259B410700DA442F /* KakaoSpeechSample */,
 				E9337F70259B410700DA442F /* Products */,
+				37C3D682847FC48E829A9952 /* Pods */,
+				E900C92A259B50D300E118A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +130,14 @@
 		E9337F71259B410700DA442F /* KakaoSpeechSample */ = {
 			isa = PBXGroup;
 			children = (
+				E900C931259B5A7000E118A6 /* Controller */,
 				E9337F72259B410700DA442F /* AppDelegate.swift */,
 				E9337F74259B410700DA442F /* SceneDelegate.swift */,
-				E9337F76259B410700DA442F /* ViewController.swift */,
+				E9184496259B44B4008B6A6B /* KakaoNewtoneSpeech.framework */,
+				E900C91D259B4D8000E118A6 /* KakaoCommon.framework */,
 				E9337F78259B410700DA442F /* Main.storyboard */,
 				E9337F7B259B410800DA442F /* Assets.xcassets */,
+				E9184494259B4482008B6A6B /* KakaoCommon.framework */,
 				E9337F7D259B410800DA442F /* LaunchScreen.storyboard */,
 				E9337F80259B410800DA442F /* Info.plist */,
 			);
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9337F83259B410800DA442F /* Build configuration list for PBXNativeTarget "KakaoSpeechSample" */;
 			buildPhases = (
+				4E2CAC99C5BE17853FDF2A14 /* [CP] Check Pods Manifest.lock */,
 				E9337F6B259B410700DA442F /* Sources */,
 				E9337F6C259B410700DA442F /* Frameworks */,
 				E9337F6D259B410700DA442F /* Resources */,
+				1BA0C04AE9DEF8CB60132E5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +211,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BA0C04AE9DEF8CB60132E5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoSpeechSample/Pods-KakaoSpeechSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoSpeechSample/Pods-KakaoSpeechSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoSpeechSample/Pods-KakaoSpeechSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E2CAC99C5BE17853FDF2A14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoSpeechSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9337F6B259B410700DA442F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +260,9 @@
 			files = (
 				E9337F77259B410700DA442F /* ViewController.swift in Sources */,
 				E9337F73259B410700DA442F /* AppDelegate.swift in Sources */,
+				E900C936259B5A9A00E118A6 /* Selector.swift in Sources */,
+				E900C93A259B5AB800E118A6 /* UI.swift in Sources */,
+				E900C93D259B5AF500E118A6 /* Speak.swift in Sources */,
 				E9337F75259B410700DA442F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +344,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lc++",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -274,6 +402,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lc++",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -283,15 +415,34 @@
 		};
 		E9337F84259B410800DA442F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2A132AC580371AA72C2120 /* Pods-KakaoSpeechSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 983YQA8Y6W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KakaoSpeechSample",
+				);
 				INFOPLIST_FILE = KakaoSpeechSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = haedong.KakaoSpeechSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,15 +453,34 @@
 		};
 		E9337F85259B410800DA442F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF0CC629BED3B54BF156F9C /* Pods-KakaoSpeechSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 983YQA8Y6W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KakaoSpeechSample",
+				);
 				INFOPLIST_FILE = KakaoSpeechSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = haedong.KakaoSpeechSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
