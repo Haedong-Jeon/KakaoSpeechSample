@@ -33,9 +33,9 @@ class ViewController: UIViewController, MTTextToSpeechDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         let config: [AnyHashable: Any] = [
-            "TextToSpeechConfigKeySpeechSpeed": NSNumber(1.0),
-            "TextToSpeechConfigKeyVoiceType": NSString("TextToSpeechVoiceTypeWomanDialog"),
-            "TextToSpeechConfigServiceMode": NSString("NewtoneTalk_2")
+            TextToSpeechConfigKeySpeechSpeed: 1.0,
+            TextToSpeechConfigKeyVoiceType: TextToSpeechVoiceTypeWomanDialog,
+            TextToSpeechConfigServiceMode: NewtoneTalk_2
         ]
         configureUI()
         speakerClient = MTTextToSpeechClient(config: config)
